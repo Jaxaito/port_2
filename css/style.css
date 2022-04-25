@@ -1,0 +1,145 @@
+html {
+    font-size: 100%;
+}
+body {
+    color: white;
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+    display:inline-block;
+}
+img {
+    max-width: 100%;
+}
+.wrapper {
+    width: 100%;
+    padding: 0 7%;
+    margin: 0 auto 120px auto;
+}
+.s-title {
+    letter-spacing: 0.3em;
+    margin-bottom: 100px;
+    position: relative;
+}
+.s-title::after {
+    content: 'Motorcycle';
+    color: rgb(122, 17, 17);
+    opacity: 0.5;
+    display: block;
+    font-size: 20rem;
+    position: absolute;
+    top: -60px;
+    left: 80px;
+}
+.slider img {
+    width: 100%;
+    height: auto;
+}
+.slider .slick-slide {
+    margin:0 10px;
+}
+#header{
+    padding: 0 7%;
+    margin: 0 auto;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+#header h1 {
+    letter-spacing: 0.5em;
+    font-size: 1.5rem;
+}
+#header h1 a {
+    line-height: 60px;
+}
+#mainvisual img {
+    width: 100%;
+    height: calc(100vh - 70px);
+    object-fit: cover;
+    object-position: center top;
+    margin-bottom: 80px;
+}
+#illust .items {
+    display: flex;
+    width: 100%;
+    position: relative;
+    height: 1100px;
+}
+#illust .illust {
+    width: 70%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+#illust .text {
+    width: 20%;
+    text-align: justify;
+}
+#illust .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#illust .flex li {
+    width: 30%;
+    object-fit: cover;
+    margin-bottom: 31px;
+    position: relative;
+}
+#illust .flex li:hover {
+    transform: scale(1.4,1.4);
+    transition: all 0.5s ease;
+    z-index: 100;
+}
+#illust .flex li img:hover {
+    box-shadow: 0 0 10px black;
+}
+#illust .flex li p {
+    position: absolute;
+    padding: 0 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 17px;
+    left: 0;
+}
+#footer {
+    padding: 20px 10px;
+}
+#footer p {
+    text-align: center;
+}
+
+@media screen and (max-width: 760px){
+    #mainvisual img {
+        height: 420px;
+        object-position: left;
+    }
+    #illust .flex {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    #illust .flex li {
+        width: 100%;
+    }
+    #illust .items {
+        flex-direction: column;
+    }
+    #illust .text {
+        width: 100%;
+    }
+    #illust .illust {
+        width: 100%;
+        top: 200px;
+    }
+    #illust .flex li:hover {
+        transform: scale(1.0,1.0);
+    }
+    #comic {
+        margin-top: 3200px;
+    }
+} 
